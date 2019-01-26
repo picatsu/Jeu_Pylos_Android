@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "859621517552",
+    "firebase_url": "https://pylos-3f239.firebaseio.com",
+    "project_id": "pylos-3f239",
+    "storage_bucket": "pylos-3f239.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859621517552:android:d54bdb8986d8939e",
+        "android_client_info": {
+          "package_name": "projet.pylos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "859621517552-920ejbo8edabcqk0t7fgmfug0vr4n7r4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQyfRPeeVcquJwkUmn7gjgaTG-cb7tN5E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
