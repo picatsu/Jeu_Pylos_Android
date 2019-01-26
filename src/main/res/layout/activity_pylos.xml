@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+    android:background="@android:color/background_dark"
+    tools:context="projet.pylos.PYLOS_View"
+    >
+    <!-- to show what the parent is -->
+
+
+
+        <LinearLayout
+            android:background="@android:color/transparent"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="0.3">
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="ShowPopup"
+                android:background="@drawable/boutton_custom"
+                android:text="Parametre" />
+
+            <ToggleButton
+                android:id="@+id/button17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="Komugi .."
+                android:textOn="HAY !"
+                android:layout_weight="1"
+
+                android:background="@drawable/boutton_custom"
+                android:text="Komugi ...HAY !" />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:background="#000000"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="3">
+
+
+
+        <android.opengl.GLSurfaceView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:id="@+id/boardSurface" />
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@android:color/transparent"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="00.3">
+        <Button
+            android:id="@+id/haut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/camera_up"
+             />
+        <Button
+            android:id="@+id/bas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/camera_down"
+             />
+        <Button
+            android:id="@+id/droit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/camera_right"
+             />
+        <Button
+            android:id="@+id/gauche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/camera_left"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:background="@android:color/transparent"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="00.3">
+
+        <Button
+            android:id="@+id/button22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boutton_custom"
+            android:textFontWeight="10dp"
+            android:text="PLAYER  :  PINK"
+            />
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textFontWeight="10dp"
+            android:background="@drawable/boutton_custom"
+            android:text="MACHINE  :  GREEN" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+
+

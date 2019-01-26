@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="projet.pylos.JEUX_View"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+
+        <RelativeLayout
+            android:id="@+id/relativebanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gifpylos"
+
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:onClick="onClickPylos"
+                android:src="@drawable/giphy"
+
+                />
+
+
+            <Button
+                android:id="@+id/instructionspylos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gifpylos"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:background="@drawable/boutton_custom"
+                android:onClick="onClickinsctructiuons"
+
+                android:text="  Instructions Pylos  " />
+
+
+            <Button
+                android:id="@+id/buttonsiteweb"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/instructionspylos"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:background="@drawable/boutton_custom"
+                android:onClick="onClickSiteWeb"
+                android:text="  Visite Site Web  " />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonsiteweb"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:background="@drawable/boutton_custom"
+                android:text="  Pentomino  " />
+
+
+            <Button
+                android:id="@+id/button2d"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonsiteweb"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:background="@drawable/boutton_custom"
+                android:onClick="onClick2d"
+                android:text="  Pylos en 2D ?   " />
+
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="ca-app-pub-7192365310759720/4775453808">
+            </com.google.android.gms.ads.AdView>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

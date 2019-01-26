@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">VAYA</string>
+    <string name="title_activity_jeux">JEUX</string>
+    <string name="title_activity_login">LOGIN</string>
+
+    <string name="title_activity_pylos">pylos</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="spinner_title">TITRE</string>
+</resources>

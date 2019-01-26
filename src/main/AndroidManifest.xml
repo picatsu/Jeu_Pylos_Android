@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="projet.pylos"
+    android:versionCode="2"
+    android:versionName="2.0"
+    >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/vaya"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/vaya"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7192365310759720~6871720835"/>
+
+
+
+
+
+
+        <activity android:name="projet.pylos.Insctrutions_View"></activity>
+        <activity android:name="projet.pylos.Score_View" />
+        <activity
+            android:name="projet.pylos.JEUX_View"
+            android:label="VAYA"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="projet.pylos.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="projet.pylos.PYLOS_View"
+            android:label="jeu view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="projet.pylos.Web_View"
+            android:label="web"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="projet.pylos.pylos2D_AUTO_View"
+            android:label="mode2d"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="projet.pylos.Connexion"
+            android:label="Connection"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+    </application>
+
+
+
+</manifest>

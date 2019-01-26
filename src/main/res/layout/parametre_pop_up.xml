@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="475dp"
+    android:background="@color/colorPrimaryDark"
+    android:padding="5dp"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/txtclose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colorAccent"
+        android:text="X"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:background="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score "
+            android:textStyle="bold"
+            android:textColor="@android:color/darker_gray"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 00000 "
+            android:id="@+id/valeurscore"
+            android:textColor="@android:color/secondary_text_dark"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@android:color/holo_green_dark"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reussire 100 game a la suite"
+                android:id="@+id/mission1"
+                android:textSize="18sp"
+                android:textColor="@android:color/secondary_text_dark"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="% reussite"
+                android:id="@+id/valeurmission1"
+                android:textSize="18sp"
+                android:textColor="@android:color/secondary_text_dark"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@android:color/holo_green_dark"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reussir 1000 game a la suite "
+                android:textSize="18sp"
+                android:textColor="@android:color/secondary_text_dark"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="% reussite "
+                android:id="@+id/valeurmission2"
+                android:textSize="18sp"
+                android:textColor="@android:color/secondary_text_dark"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reussir 5000 game a la suite "
+                android:textSize="18sp"
+                android:textColor="@android:color/secondary_text_dark"                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="% reussite "
+                android:id="@+id/valeurmission3"
+                android:textSize="18sp"
+                android:textColor="@android:color/secondary_text_dark"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+    android:id="@+id/btnfollow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Login"
+    android:onClick="onClickLOGIN"
+    android:layout_marginTop="25dp"
+    android:layout_gravity="center_horizontal"
+        android:background="@drawable/boutton_custom"
+
+
+    android:textColor="@android:color/secondary_text_dark"/>
+
+
+    <Button
+        android:id="@+id/btncertificat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generer Certificat"
+        android:onClick="onClickGenerate"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/boutton_custom"
+        android:textColor="@android:color/secondary_text_dark"/>
+
+
+
+
+</LinearLayout>
